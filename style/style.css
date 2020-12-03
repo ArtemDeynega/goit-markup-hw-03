@@ -1,0 +1,308 @@
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+/* цвет фона #FFFF */
+/* вторичный цвет фона #F5F4FA */
+html {
+      box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+      box-sizing: inherit;
+} 
+
+:root {
+      --primary-text-color: #212121;
+      --title-text-color: #757575;
+      --accent-color: #2196F3;
+      --primary-white-color: #FFFF;
+      --secondary-background-color: #F5F4FA;
+
+}
+.body {
+      font-family: Roboto;
+      font-size: 20px;
+      background-color: var(--primary-white-color);
+      color: var(--primary-text-color);
+      
+
+
+}
+
+a {
+      text-decoration: none;
+}
+ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+
+.visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+      
+}
+/* =======CONTAINER====== */
+.container-header, 
+.container-main,
+.container-footer{
+      width: 1230px;
+      padding-left: 15px;
+      padding-right: 15px;
+}
+
+/* =======Header====== */
+.heder{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+/* ================= logo =============================*/
+.logo{
+      color:var(--primary-text-color);
+      font-family: Raleway;
+      font-size: 26px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: .838;
+      letter-spacing: 0.03em
+}
+.logo-accent {
+      color:var(--accent-color);
+}
+
+
+/* =============== Site nav ====================*/
+
+.address-mail,
+.address-tel,
+.site-nav-link {
+      display: inline-block;
+      color: var(--primary-text-color);
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: .875;
+      letter-spacing: 0.02em;
+
+}
+
+
+.site-nav-link:focus,
+.site-nav-link:hover,
+.address-mail:focus,
+.address-mail:hover,
+.address-tel:focus,
+.address-tel:hover {
+      color: var(--accent-color);
+}
+.site-nav .site-nav-link.current {
+      color: var(--accent-color);
+
+}
+
+
+
+/* Section */
+/* ===================== Hero ===================== */
+
+.hero {
+      min-height: 600px;
+      background-color: #2F303A;
+}
+.section-title-hero {
+      font-size: 44px;
+      font-weight: 900;
+      
+      
+      font-style: normal;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 60px;
+      letter-spacing: 0.06em;
+      
+      color: var(--secondary-background-color);
+      
+}
+
+/* ==========Title============ */
+.section-title {
+      font-size: 36px;
+      font-weight: 700;
+      font-style: normal;
+      color: var(--primary-text-color);
+      text-align: center;
+      line-height: .857;
+}
+
+/* ================ Section-Aside =============== */
+.section-aside-subtitle {
+      font-size: 14px;
+      font-weight: 700;
+      font-style: normal;
+      color: var(--primary-text-color);
+      line-height: .875;
+      text-transform: uppercase;
+}
+
+.section-aside-subtitle-text {
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      color: var(--title-text-color);
+      line-height: 24px;
+}
+
+/* ================ Section Command============ */
+
+
+.section-command-worker {
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      color: var(--primary-text-color);
+      line-height: .842;
+}
+.section-command-specialty {
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      color: var(--title-text-color);
+      line-height: .842;
+      
+}
+
+
+/* =============== Section Title ================== */
+
+
+/* ====================== Botton ================ */
+
+.button-nav {
+      display: flex;
+}
+.btn-primary {
+      
+      color: var(--secondary-background-color);
+      background-color: var(--accent-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      font-style: normal;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      line-height: 1.875;
+
+      display: inline-block;
+      height: 50px;
+      padding: 10px 32px;
+      border-radius: 4px;
+      border: inherit;
+      
+   
+
+}
+.button-porfolio {
+      color: var(--primary-text-color);
+      display: inline-block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      line-height: 30px;
+      border: inherit;
+      border-radius: 4px;
+      padding: 6px 22px;
+      margin: 8px;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+}
+.container-porfolio-btn {
+      margin-left: -8px;
+      margin-right: -8px;
+}
+.button-nav .button-porfolio.current{
+      background-color: var(--accent-color);
+      color: var(--secondary-background-color);
+}
+
+
+/* =================== Footer =================== */
+
+.addres-geo {
+      color: var(--primary-text-color);
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em
+}
+
+/* ================= PORTFOLIO ========== */
+/* ==================== MAIN-NAV=============== */
+
+
+/* ====================Portfolio============= */
+.portfolio-heading {
+      color: var(--primary-text-color);
+      font-size: 18px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: .5;
+      letter-spacing: 0.06em;
+
+}
+.portfolio-text {
+      color: var(--title-text-color);
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: .5;
+      letter-spacing: 0.03em;
+
+}
+
+.proect-items {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
+
+      
+      
+}
+.proect-list {
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc(100% / 3 - 30px);
+      outline: 2px solid tomato;
+
+}
+
+/* ---------------------------- */
+
+      /* Устанавливает рамку */
+      border: 2px solid #2196F3;
+
+      /* Добавляет внутреннее поле */
+      padding: 15px;
+
+      /* Устанавливает внешние отступы */
+      margin: 20px;
+
+/* ------------------ */
