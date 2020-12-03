@@ -19,6 +19,7 @@ html {
       --accent-color: #2196F3;
       --primary-white-color: #FFFF;
       --secondary-background-color: #F5F4FA;
+      --card-set-gap: -20px
 
 }
 .body {
@@ -39,6 +40,10 @@ ul {
       padding: 0;
       margin: 0;
 }
+img {
+      display: block;
+      max-width: 100%;
+}
 
 .visually-hidden {
       position: absolute;
@@ -55,20 +60,53 @@ ul {
       
 }
 /* =======CONTAINER====== */
-.container-header, 
-.container-main,
-.container-footer{
+
+.container {
       width: 1230px;
       padding-left: 15px;
       padding-right: 15px;
+      margin: 0 auto;
 }
 
 /* =======Header====== */
+.header {
+      padding-top: 32px;
+      padding-bottom: 32px;
+}
 .heder{
       display: flex;
       align-items: center;
       justify-content: space-between;
+      
 }
+.header .container {
+      display: flex;
+      align-items: center;
+
+}
+.header .address {
+      margin-left: auto;
+      margin-right: 30px;
+
+}
+
+.nav {
+      display: flex;
+      align-items: center;
+}
+.site-nav {
+      display: flex;
+      align-items: center;
+}
+
+.header .logo {
+      margin-right: 94px;
+}
+.site-list-item:not(:last-child) {
+      margin-right: 50px;
+}
+
+
 /* ================= logo =============================*/
 .logo{
       color:var(--primary-text-color);
@@ -83,8 +121,6 @@ ul {
       color:var(--accent-color);
 }
 
-
-/* =============== Site nav ====================*/
 
 .address-mail,
 .address-tel,
@@ -112,6 +148,11 @@ ul {
       color: var(--accent-color);
 
 }
+.list {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+}
 
 
 
@@ -121,6 +162,7 @@ ul {
 .hero {
       min-height: 600px;
       background-color: #2F303A;
+      text-align: center;
 }
 .section-title-hero {
       font-size: 44px;
@@ -132,6 +174,9 @@ ul {
       text-align: center;
       line-height: 60px;
       letter-spacing: 0.06em;
+
+      margin-top: 0px;
+      margin-bottom: 30px;
       
       color: var(--secondary-background-color);
       
@@ -145,6 +190,21 @@ ul {
       color: var(--primary-text-color);
       text-align: center;
       line-height: .857;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      
+}
+/* =========CONTAINER================ */
+.container-aside {
+      margin-left: auto;
+      margin-right: auto;
+
+}
+.section-aside {
+      padding: 0;
+      margin: 0;
+      display: flex;
+
 }
 
 /* ================ Section-Aside =============== */
@@ -155,6 +215,8 @@ ul {
       color: var(--primary-text-color);
       line-height: .875;
       text-transform: uppercase;
+      margin-top: 0px;
+      margin-bottom: 10px;
 }
 
 .section-aside-subtitle-text {
@@ -163,10 +225,27 @@ ul {
       font-style: normal;
       color: var(--title-text-color);
       line-height: 24px;
+      margin-top: 0px;
 }
 
-/* ================ Section Command============ */
 
+/* ================ Section============ */
+
+.section-command,
+.section-portfolio,
+.section
+ {
+      padding-top:94px;
+      padding-bottom: 94px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+}
+
+.section-command-title {
+      display: inline-block;
+      margin-top: 0px;
+      margin-bottom: 0px;
+}
 
 .section-command-worker {
       font-size: 16px;
@@ -174,6 +253,9 @@ ul {
       font-style: normal;
       color: var(--primary-text-color);
       line-height: .842;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      text-align: center;
 }
 .section-command-specialty {
       font-size: 16px;
@@ -181,6 +263,9 @@ ul {
       font-style: normal;
       color: var(--title-text-color);
       line-height: .842;
+      margin-top: 0px;
+      margin-bottom: 16px;
+      text-align: center;
       
 }
 
@@ -229,15 +314,19 @@ ul {
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
       0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+      border: 1px solid transparent;
 
 }
 .container-porfolio-btn {
       margin-left: -8px;
       margin-right: -8px;
+      margin-top: 0px;
+      margin-bottom: 34px;
 }
 .button-nav .button-porfolio.current{
       background-color: var(--accent-color);
       color: var(--secondary-background-color);
+      
 }
 
 
@@ -258,6 +347,12 @@ ul {
 
 
 /* ====================Portfolio============= */
+.container-porfolio {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+}
 .portfolio-heading {
       color: var(--primary-text-color);
       font-size: 18px;
@@ -265,6 +360,9 @@ ul {
       font-style: normal;
       line-height: .5;
       letter-spacing: 0.06em;
+      margin-top: 0;
+      margin-bottom: 4px;
+      
 
 }
 .portfolio-text {
@@ -274,7 +372,7 @@ ul {
       font-style: normal;
       line-height: .5;
       letter-spacing: 0.03em;
-
+      
 }
 
 .proect-items {
@@ -282,18 +380,24 @@ ul {
       flex-wrap: wrap;
       margin-top: -30px;
       margin-left: -30px;
-
-      
-      
+      margin-bottom: 0px;
 }
 .proect-list {
       margin-top: 30px;
       margin-left: 30px;
       flex-basis: calc(100% / 3 - 30px);
       outline: 2px solid tomato;
+      overflow: hidden;
+}
+.img-porfolio
+ {
+      margin-top: 0px;
+      margin-bottom: 20px;
 
 }
-
+.card-content {
+      padding: 24px;
+}
 /* ---------------------------- */
 
       /* Устанавливает рамку */

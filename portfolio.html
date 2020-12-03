@@ -25,65 +25,61 @@
   </head>
   <body class="body">
     <!-- Header -->
-    <div class="container-header">
-      <header class="header">
-        <div class="container-nav">
-          <nav class="nav">
-            <a href="./index.html" class="logo">
-              <span class="logo-accent">Web</span>Studio</a
-            >
-            <ul class="site-nav">
-              <li><a href="./index.html" class="site-nav-link">Студия</a></li>
-              <li>
-                <a href="./portfolio.html" class="site-nav-link current"
-                  >Портфолио</a
-                >
-              </li>
-              <li><a href="" class="site-nav-link">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="container-address">
-          <address class="address">
-            <a href="mailto:info@devstudio.com" class="address-mail"
-              >info@devstudio.com</a
-            >
-            <a href="tel:+380961111111" class="address-tel"
-              >+38 096 111 11 11</a
-            >
-          </address>
-        </div>
-      </header>
-    </div>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html" class="logo">
+            <span class="logo-accent">Web</span>Studio</a
+          >
+          <ul class="site-nav">
+            <li class="site-list-item">
+              <a href="./index.html" class="site-nav-link">Студия</a>
+            </li>
+            <li class="site-list-item">
+              <a href="./portfolio.html" class="site-nav-link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-list-item">
+              <a href="" class="site-nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="address">
+          <a href="mailto:info@devstudio.com" class="address-mail"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="address-tel">+38 096 111 11 11</a>
+        </address>
+      </div>
+    </header>
+
     <!-- Main -->
-    <div class="container-main">
-      <main>
-        <section class="main-nav">
-          <div class="container-porfolio-btn">
-            <ul class="button-nav">
-              <li>
-                <button type="button" class="button-porfolio current">
-                  Все
-                </button>
-              </li>
-              <li>
-                <button type="button" class="button-porfolio">Веб-сайты</button>
-              </li>
-              <li>
-                <button type="button" class="button-porfolio">
-                  Приложения
-                </button>
-              </li>
-              <li>
-                <button type="button" class="button-porfolio">Дизайн</button>
-              </li>
-              <li>
-                <button type="button" class="button-porfolio">Маркетинг</button>
-              </li>
-            </ul>
-          </div>
-          <h1 class="visually-hidden">Портфолио</h1>
-          <h2 class="visually-hidden">Примеры работ</h2>
+    <main>
+      <section class="section-portfolio">
+        <div class="container">
+          <ul class="button-nav">
+            <li>
+              <button type="button" class="button-porfolio current">Все</button>
+            </li>
+            <li>
+              <button type="button" class="button-porfolio">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="button-porfolio">Приложения</button>
+            </li>
+            <li>
+              <button type="button" class="button-porfolio">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="button-porfolio">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <h1 class="visually-hidden">Портфолио</h1>
+        <h2 class="visually-hidden">Примеры работ</h2>
+        <div class="container-porfolio">
           <ul class="proect-items">
             <li class="proect-list">
               <img
@@ -91,9 +87,12 @@
                 alt="Ноутбук с дизайном сайта"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">Проект Prime</h3>
-              <p class="portfolio-text">Маркетинг</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">Проект Prime</h3>
+                <p class="portfolio-text">Маркетинг</p>
+              </div>
             </li>
             <li class="proect-list">
               <img
@@ -101,11 +100,14 @@
                 alt="Постер New Orlean vs Golden Star"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">
-                Постер New Orlean vs Golden Star
-              </h3>
-              <p class="portfolio-text">Дизайн</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="portfolio-text">Дизайн</p>
+              </div>
             </li>
             <li class="proect-list">
               <img
@@ -113,9 +115,12 @@
                 alt="Логотип ресторана"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">Ресторан Seafood</h3>
-              <p class="portfolio-text">Приложение</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">Ресторан Seafood</h3>
+                <p class="portfolio-text">Приложение</p>
+              </div>
             </li>
             <li class="proect-list">
               <img
@@ -123,9 +128,12 @@
                 alt="Наушники"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">Проект Prime</h3>
-              <p class="portfolio-text">Маркетинг</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">Проект Prime</h3>
+                <p class="portfolio-text">Маркетинг</p>
+              </div>
             </li>
             <li class="proect-list">
               <img
@@ -133,9 +141,12 @@
                 alt="Коробки для упаковки"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">Проект Boxes</h3>
-              <p class="portfolio-text">Приложение</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">Проект Boxes</h3>
+                <p class="portfolio-text">Приложение</p>
+              </div>
             </li>
             <li class="proect-list">
               <img
@@ -143,9 +154,12 @@
                 alt="Компьютер с примером веб-сайта"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">Inspiration has no Borders</h3>
-              <p class="portfolio-text">Веб-сайт</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">Inspiration has no Borders</h3>
+                <p class="portfolio-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="proect-list">
               <img
@@ -153,9 +167,12 @@
                 alt="Книга"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">Издание Limited Edition</h3>
-              <p class="portfolio-text">Дизайн</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">Издание Limited Edition</h3>
+                <p class="portfolio-text">Дизайн</p>
+              </div>
             </li>
             <li class="proect-list">
               <img
@@ -163,9 +180,12 @@
                 alt="Проект Лаб"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">Проект LAB</h3>
-              <p class="portfolio-text">Маркетинг</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">Проект LAB</h3>
+                <p class="portfolio-text">Маркетинг</p>
+              </div>
             </li>
             <li class="proect-list">
               <img
@@ -173,54 +193,37 @@
                 alt="Ноутбук с примером приложения"
                 width="370"
                 height="294"
+                class="img-porfolio"
               />
-              <h3 class="portfolio-heading">Growing Business</h3>
-              <p class="portfolio-text">Приложение</p>
+              <div class="card-content">
+                <h3 class="portfolio-heading">Growing Business</h3>
+                <p class="portfolio-text">Приложение</p>
+              </div>
             </li>
           </ul>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
+
     <!-- Footer -->
-    <div class="container-footer">
-      <footer class="footer">
+
+    <footer class="footer">
+      <div class="container">
         <a href="./index.html" class="logo">
           <span class="logo-accent">Web</span>Studio</a
         >
-        <address>
+        <address class="addres-geo">
           <a href="https://goo.gl/maps/Ztg2FWvti8LL4upH8" target="_blank"
             >г. Киев, пр-т Леси Украинки, 26</a
           >
         </address>
-        <address class="address">
+        <address class="address list">
           <a href="mailto:info@devstudio.com" class="address-mail"
             >info@devstudio.com</a
           >
           <a href="tel:+380961111111" class="address-tel">+38 096 111 11 11</a>
         </address>
-      </footer>
-    </div>
-    <div class="tabs">
-      <div class="controls">...</div>
-
-      <div class="pane is-active">
-        1 - Lorem ipsum dolor sit amet consectetur.
       </div>
-      <div class="pane">2 - Lorem ipsum dolor sit amet consectetur.</div>
-      <div class="pane">3 - Lorem ipsum dolor sit amet consectetur.</div>
-    </div>
-
-    <ul class="list">
-      <li class="list-item">1</li>
-      <li class="list-item">2</li>
-      <li class="list-item">3</li>
-      <li class="list-item">4</li>
-      <li class="list-item">5</li>
-      <li class="list-item">6</li>
-      <li class="list-item">7</li>
-      <li class="list-item">8</li>
-      <li class="list-item">9</li>
-      <li class="list-item">10</li>
-    </ul>
+    </footer>
   </body>
 </html>
