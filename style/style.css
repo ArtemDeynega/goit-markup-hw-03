@@ -11,7 +11,7 @@ html {
 *::before,
 *::after {
       box-sizing: inherit;
-} 
+}
 
 :root {
       --primary-text-color: #212121;
@@ -20,14 +20,14 @@ html {
       --primary-white-color: #FFFF;
       --secondary-background-color: #F5F4FA;
       --card-set-gap: -20px
-
 }
+
 .body {
       font-family: Roboto;
       font-size: 20px;
       background-color: var(--primary-white-color);
       color: var(--primary-text-color);
-      
+
 
 
 }
@@ -35,11 +35,13 @@ html {
 a {
       text-decoration: none;
 }
+
 ul {
       list-style: none;
       padding: 0;
       margin: 0;
 }
+
 img {
       display: block;
       max-width: 100%;
@@ -57,8 +59,9 @@ img {
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
       overflow: hidden;
-      
+
 }
+
 /* =======CONTAINER====== */
 
 .container {
@@ -73,17 +76,20 @@ img {
       padding-top: 32px;
       padding-bottom: 32px;
 }
-.heder{
+
+.heder {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
+
 }
+
 .header .container {
       display: flex;
       align-items: center;
 
 }
+
 .header .address {
       margin-left: auto;
       margin-right: 30px;
@@ -94,6 +100,7 @@ img {
       display: flex;
       align-items: center;
 }
+
 .site-nav {
       display: flex;
       align-items: center;
@@ -102,14 +109,23 @@ img {
 .header .logo {
       margin-right: 94px;
 }
+
 .site-list-item:not(:last-child) {
       margin-right: 50px;
 }
+.section-aside-list:not(:last-child) {
+      margin-right: 30px;
+}
+.section-aside .section-aside-list {
+      width: 270px;
+      flex-wrap: wrap;
+      
 
+}
 
 /* ================= logo =============================*/
-.logo{
-      color:var(--primary-text-color);
+.logo {
+      color: var(--primary-text-color);
       font-family: Raleway;
       font-size: 26px;
       font-weight: 700;
@@ -117,8 +133,9 @@ img {
       line-height: .838;
       letter-spacing: 0.03em
 }
+
 .logo-accent {
-      color:var(--accent-color);
+      color: var(--accent-color);
 }
 
 
@@ -144,10 +161,12 @@ img {
 .address-tel:hover {
       color: var(--accent-color);
 }
+
 .site-nav .site-nav-link.current {
       color: var(--accent-color);
 
 }
+
 .list {
       margin: 0px;
       padding: 0px;
@@ -160,15 +179,19 @@ img {
 /* ===================== Hero ===================== */
 
 .hero {
+      padding-top: 200px;
+      padding-bottom: 280px;
+
       min-height: 600px;
       background-color: #2F303A;
       text-align: center;
 }
+
 .section-title-hero {
       font-size: 44px;
       font-weight: 900;
-      
-      
+
+
       font-style: normal;
       text-transform: uppercase;
       text-align: center;
@@ -177,9 +200,9 @@ img {
 
       margin-top: 0px;
       margin-bottom: 30px;
-      
+
       color: var(--secondary-background-color);
-      
+
 }
 
 /* ==========Title============ */
@@ -192,20 +215,11 @@ img {
       line-height: .857;
       margin-top: 0px;
       margin-bottom: 50px;
-      
+
 }
+
 /* =========CONTAINER================ */
-.container-aside {
-      margin-left: auto;
-      margin-right: auto;
 
-}
-.section-aside {
-      padding: 0;
-      margin: 0;
-      display: flex;
-
-}
 
 /* ================ Section-Aside =============== */
 .section-aside-subtitle {
@@ -228,14 +242,39 @@ img {
       margin-top: 0px;
 }
 
+.container-aside {
+      margin-left: auto;
+      margin-right: auto;
+
+}
+
+.section-aside {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      
+
+}
+
+
+.section-aside .section-aside-list {
+      display: flex;
+      flex: wrap;
+      width: 270px;
+      
+      
+}
+.section-aside-list:not(:last-child) {
+      margin-right: 30px;
+}
 
 /* ================ Section============ */
 
 .section-command,
 .section-portfolio,
-.section
- {
-      padding-top:94px;
+.section {
+      padding-top: 94px;
       padding-bottom: 94px;
       margin-bottom: 0px;
       margin-top: 0px;
@@ -257,6 +296,7 @@ img {
       margin-bottom: 10px;
       text-align: center;
 }
+
 .section-command-specialty {
       font-size: 16px;
       font-weight: 400;
@@ -266,7 +306,7 @@ img {
       margin-top: 0px;
       margin-bottom: 16px;
       text-align: center;
-      
+
 }
 
 
@@ -277,9 +317,25 @@ img {
 
 .button-nav {
       display: flex;
-}
-.btn-primary {
       
+      
+}
+
+.btn-title {
+      
+     
+      
+}
+
+.button-nav .btn-title {
+      margin-right: 8px;
+      
+}
+ .container.btn-title:last-child {
+       margin-right: 0;
+ }
+.btn-primary {
+
       color: var(--secondary-background-color);
       background-color: var(--accent-color);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -295,10 +351,11 @@ img {
       padding: 10px 32px;
       border-radius: 4px;
       border: inherit;
-      
-   
+
+
 
 }
+
 .button-porfolio {
       color: var(--primary-text-color);
       display: inline-block;
@@ -312,21 +369,23 @@ img {
       padding: 6px 22px;
       margin: 8px;
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-      0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
       border: 1px solid transparent;
 
 }
+
 .container-porfolio-btn {
       margin-left: -8px;
       margin-right: -8px;
       margin-top: 0px;
       margin-bottom: 34px;
 }
-.button-nav .button-porfolio.current{
+
+.button-nav .button-porfolio.current {
       background-color: var(--accent-color);
       color: var(--secondary-background-color);
-      
+
 }
 
 
@@ -353,6 +412,7 @@ img {
       padding-left: 15px;
       padding-right: 15px;
 }
+
 .portfolio-heading {
       color: var(--primary-text-color);
       font-size: 18px;
@@ -362,9 +422,10 @@ img {
       letter-spacing: 0.06em;
       margin-top: 0;
       margin-bottom: 4px;
-      
+
 
 }
+
 .portfolio-text {
       color: var(--title-text-color);
       font-size: 16px;
@@ -372,7 +433,7 @@ img {
       font-style: normal;
       line-height: .5;
       letter-spacing: 0.03em;
-      
+
 }
 
 .proect-items {
@@ -382,6 +443,7 @@ img {
       margin-left: -30px;
       margin-bottom: 0px;
 }
+
 .proect-list {
       margin-top: 30px;
       margin-left: 30px;
@@ -389,24 +451,26 @@ img {
       outline: 2px solid tomato;
       overflow: hidden;
 }
-.img-porfolio
- {
+
+.img-porfolio {
       margin-top: 0px;
       margin-bottom: 20px;
 
 }
+
 .card-content {
       padding: 24px;
 }
+
 /* ---------------------------- */
 
-      /* Устанавливает рамку */
-      border: 2px solid #2196F3;
+/* Устанавливает рамку */
+border: 2px solid #2196F3;
 
-      /* Добавляет внутреннее поле */
-      padding: 15px;
+/* Добавляет внутреннее поле */
+padding: 15px;
 
-      /* Устанавливает внешние отступы */
-      margin: 20px;
+/* Устанавливает внешние отступы */
+margin: 20px;
 
 /* ------------------ */
