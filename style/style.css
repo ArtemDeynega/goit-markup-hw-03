@@ -230,7 +230,7 @@ img {
 
 .container.command{
       padding-top: 94px;
-      margin: 0;
+      margin: 0 auto;
 }
 
 
@@ -289,7 +289,7 @@ img {
       display: flex;
       margin-top: 0px;
       margin-bottom: 0px;
-      
+
       margin-left: auto;
       margin-right: auto;
       
@@ -316,6 +316,9 @@ img {
       display: flex;
       margin-top: 0px;
       margin-bottom: 0px;
+}
+
+
 }
 .command-title-list:not(:last-child) {
       margin-right: 30px;
@@ -356,10 +359,10 @@ img {
 
 /* =============== Section Receprion ================== */
 .section.receprion {
+      width: 1170px;
       padding-top: 0px;
       padding-bottom: 94px;
-      margin-bottom: 0px;
-      margin-top: 0px;
+      margin: 0 auto;
 
 }
 /* ====================== Botton ================ */
@@ -506,12 +509,12 @@ img {
 
 .img-porfolio {
       margin-top: 0px;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
 
 }
 
 .card-content {
-      padding: 24px;
+      padding: 20px 20px;
 }
 
 /* ---------------------------- */
