@@ -19,6 +19,7 @@ html {
       --accent-color: #2196F3;
       --primary-white-color: #FFFF;
       --secondary-background-color: #F5F4FA;
+      --border-color-white: #EEEEEE;
       --card-set-gap: -20px
 }
 
@@ -69,12 +70,14 @@ img {
       padding-left: 15px;
       padding-right: 15px;
       margin: 0 auto;
+
 }
 
 /* =======Header====== */
 .header {
       padding-top: 32px;
       padding-bottom: 32px;
+      border-bottom: 1px solid var(--secondary-background-color);
 }
 
 .heder {
@@ -89,6 +92,8 @@ img {
       align-items: center;
       width: 1200px;
       margin: 0 auto;
+      
+
       
 
 
@@ -319,7 +324,7 @@ img {
 }
 
 
-}
+
 .command-title-list:not(:last-child) {
       margin-right: 30px;
 }
@@ -380,8 +385,8 @@ img {
       
 }
 
-.button-nav .btn-title {
-      margin-right: 8px;
+.btn-title {
+      margin-right: -8px;
       
 }
  .container.btn-title:last-child {
@@ -471,7 +476,7 @@ img {
       font-size: 18px;
       font-weight: 700;
       font-style: normal;
-      line-height: .5;
+      line-height: 36px;
       letter-spacing: 0.06em;
       margin-top: 0;
       margin-bottom: 4px;
@@ -497,14 +502,15 @@ img {
       margin-bottom: 0px;
       padding-top: 30px;
       
+      
 }
 
 .proect-list {
       margin-top: 30px;
       margin-left: 30px;
       flex-basis: calc(100% / 3 - 30px);
-      outline: 2px solid tomato;
       overflow: hidden;
+      border: 1px solid var(--border-color-white)
 }
 
 .img-porfolio {
@@ -515,6 +521,8 @@ img {
 
 .card-content {
       padding: 20px 20px;
+
+
 }
 
 /* ---------------------------- */
