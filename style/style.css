@@ -233,10 +233,7 @@ img {
 
 /* =========CONTAINER================ */
 
-.container.command{
-      padding-top: 94px;
-      margin: 0 auto;
-}
+
 
 
 /* ================ Section-Aside =============== */
@@ -313,7 +310,7 @@ img {
       margin-top: 0px;
 }
 .section.command {
-      padding-top: 0px;
+      padding-top: 94px;
       padding-bottom: 94px;
 }
 
